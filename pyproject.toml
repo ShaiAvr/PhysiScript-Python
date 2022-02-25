@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "physiscript"
+version = "0.1.0"
+description = ""
+authors = ["Shai Avraham <shaia1112011@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/ShaiAvr/PhysiScript"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.22.2"
+moderngl = "^5.6.4"
+sympy = "^1.9"
+
+[tool.poetry.dev-dependencies]
+black = "^22.1.0"
+mypy = "^0.931"
+flake8 = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
