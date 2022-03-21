@@ -58,3 +58,18 @@ class Vector:
 
     def __abs__(self) -> float:
         return np.sqrt(self._data.dot(self._data))
+
+    def __neg__(self) -> Vector:
+        cls = type(self)
+        nv = cls.__new__(cls)
+        nv._data = -self._data
+        return nv
+
+    def __pos__(self) -> Vector:
+        cls = type(self)
+        pv = cls.__new__(cls)
+        pv._data = +self._data
+        return pv
+
+    def __bool__(self) -> bool:
+        pass
